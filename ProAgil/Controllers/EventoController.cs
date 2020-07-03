@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ProAgil.Data;
-using ProAgil.Model;
+using ProAgil.Repository;
 
 namespace ProAgil.Controllers
 {
@@ -14,9 +13,9 @@ namespace ProAgil.Controllers
     [ApiController]
     public class EventoController : ControllerBase
     {
-        public DataContext _context { get; }
+        public ProAgilContext _context { get; }
 
-        public EventoController(DataContext context)
+        public EventoController(ProAgilContext context)
         {
             _context = context;
         }
