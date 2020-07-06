@@ -134,12 +134,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IProAgilRepository.cs" />
     <Compile Include="Migrations\20200703195010_initial.cs" />
     <Compile Include="Migrations\20200703195010_initial.designer.cs">
       <DependentUpon>20200703195010_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20200706182419_teste.cs" />
+    <Compile Include="Migrations\20200706182419_teste.designer.cs">
+      <DependentUpon>20200706182419_teste.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ProAgilContextModelSnapshot.cs" />
     <Compile Include="ProAgilContext.cs" />
+    <Compile Include="ProAgilRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

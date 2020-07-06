@@ -29,6 +29,7 @@ namespace ProAgil
         {
             services.AddDbContext<ProAgilContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
             services.AddControllers();
+            services.AddScoped<IProAgilRepository, ProAgilRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
